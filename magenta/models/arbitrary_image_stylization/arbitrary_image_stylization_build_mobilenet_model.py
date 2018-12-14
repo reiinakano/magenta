@@ -27,6 +27,8 @@ from magenta.models.arbitrary_image_stylization import nza_model as transformer_
 from magenta.models.image_stylization import ops
 
 try:
+  import sys
+  sys.path.append('/home/reiichiro/Projects/')
   from nets.mobilenet import mobilenet_v2, mobilenet
 except ImportError:
   print("Cannot import MobileNet model. Make sure to install slim "
